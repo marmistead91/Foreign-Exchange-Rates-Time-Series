@@ -7,3 +7,11 @@ The foreign exchange rate is based on the conversion of one coutries economy to 
 ## EDA
 
 All of the countries were broken down by economic level so they are more digestable to look at. 
+*graphs
+
+## Forcasting
+
+I used Dickey-Fuller tests to figure out the best way to make the data stationary. 
+*graphs
+
+In the natrual log of the first difference was the most stationary
