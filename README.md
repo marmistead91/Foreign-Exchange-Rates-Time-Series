@@ -7,7 +7,7 @@ The foreign exchange rate is based on the conversion of one coutries economy to 
 ## EDA
 
 Looking at the distribution of exchange rates between the Australian and US dollar. 
-![hist_aus.png](Foreign-Exchange-Rates-Time-Series/blob/master/graphs/hist_aus.png)
+![hist_aus.png](graphs/hist_aus.png)
 
 ## Forcasting
 
