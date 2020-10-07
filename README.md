@@ -19,9 +19,12 @@ PAC drops off after 1 lag and begins to steady out after 2
 ## Forcasting
 
 I used Dickey-Fuller tests to figure out the best way to make the data stationary. 
-*graphs
 
-Natrual log of the first difference was the most stationary
+Orginal data was not stationary
+![dickyfull1.png](graphs/dickyfullog.png)
+
+Taking the 1st difference of the natural log made the data most stationary
+![dickyfull1nat.png](graphs/dickyfull1nat.png)
 
 I attempted a couple of different models to see which one would work the best. Using ARIMA model I looped through a list of parameters to determine what would be the best for p,d,q using the original data and the natural log of the first difference. 
 
@@ -29,8 +32,14 @@ Looking at Mean Squared Error and Absolute Mean Squared Error the best parameter
 
 The mean squared error for the original data ended up being 0.0027 which sounds great. Unfortunately the range for my data is 0.57565 so that little bit of a mean squared error makes a big difference when looking at the graph. 
 The mean squared error for the natural log of the first difference was 0.53 making the original data better for the prediction model. 
-I predicted the valuse from 5/2015 to 4/2020, graphing the predicted values to the actual values my predicted values was a constant slope and didn't look like the actual values. This happen when your data doesn't have strong seasonality and the model finds it difficult to predict the future, therefore it simply takes the average of the previous values and predicts it.
+I predicted the valuse from 5/2015 to 4/2020, graphing the predicted values to the actual values my predicted values was a constant slope and didn't look like the actual values. 
 
-I went back to look at my seasonality for the data.
-*graph
+Graph of untouched data and predictions
+![predictog.png](graphs/predictog.png)
+
+Graph of 1st difference natural log and predictions
+![prict1nat.png](graphs/prict1nat.png)
+
+## Conclusion
+My data for both attempts seemed to be just straight lines. This happen when your data doesn't have strong seasonality and the model finds it difficult to predict the future, therefore it simply takes the average of the previous values and predicts it. Therefore even though the untouched data wasn't stationary their averages are closer to the outcomes then the averages of the 1st difference of the natural log.
 
