@@ -9,6 +9,13 @@ The foreign exchange rate is based on the conversion of one coutries economy to 
 Looking at the distribution of exchange rates between the Australian and US dollar. 
 ![hist_aus.png](graphs/hist_aus.png)
 
+The exchange rate between the Australian and US dollar from 01/2000-04/2020
+![rates.png](graphs/aus_us_exchange.png)
+
+Autocorralation and Partial Autocorralation
+PAC drops off after 1 lag and begins to steady out after 2
+![ac_pac.png](graphs/ac_pac.png)
+
 ## Forcasting
 
 I used Dickey-Fuller tests to figure out the best way to make the data stationary. 
