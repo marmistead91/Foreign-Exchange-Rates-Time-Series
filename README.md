@@ -40,6 +40,10 @@ Graph of untouched data and predictions
 Graph of 1st difference natural log and predictions
 ![prict1nat.png](graphs/prict1nat.png)
 
-## Conclusion
-My data for both attempts seemed to be just straight lines. This happen when your data doesn't have strong seasonality and the model finds it difficult to predict the future, therefore it simply takes the average of the previous values and predicts it. Therefore even though the untouched data wasn't stationary their averages are closer to the outcomes then the averages of the 1st difference of the natural log.
+Next was a naive prediction, which ended up with a root mean squared error of .005
+![act_naive.png](graphs/act_naive.png)
+![naive_preditions.png](graphs/naive_predictions.png)
 
+
+Finally was a LSTM that ended up with a root mean squared error of .0002
+![lstm_predvsact.png](graphs/lstm_predvsact.png)
