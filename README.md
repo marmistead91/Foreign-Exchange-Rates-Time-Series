@@ -40,12 +40,10 @@ Graph of untouched data and predictions
 Graph of 1st difference natural log and predictions
 ![prict1nat.png](graphs/prict1nat.png)
 
-Next was a naive prediction. 
+Next was a naive prediction, which ended up with a root mean squared error of .005
 ![act_naive.png](graphs/act_naive.png)
 ![naive_preditions.png](graphs/naive_predictions.png)
 
-Finally was a LSTM
+
+Finally was a LSTM that ended up with a root mean squared error of .0002
 ![lstm_predvsact.png](graphs/lstm_predvsact.png)
-## Conclusion
-
-
